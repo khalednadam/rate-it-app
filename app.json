@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "c81ab4f1-a1f5-4384-b113-e65e47d06184"
+      }
+    },
+    "scheme": "host.expo.exponent" ,
+    "plugins": [
+      "expo-build-properties",
+      "@react-native-google-signin/google-signin",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends."
+        }
+      ]
+    ],
+    "name": "rate-it",
+    "slug": "rate-it",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "userInterfaceStyle": "light",
+    
+    "splash":{
+      "image": "./assets/images/logo.png",
+      "resizeMode": "cover"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "bundleIdentifier": "com.khaled_nadam.rate-it",
+      "useFrameworks": "static"
+    },
+    "android": {
+      "package": "com.khaled_nadam.rateit",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF",
+        "googleServicesFile": "./google-services.json"
+
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-1681984016938400~9540693887",
+    "ios_app_id": "ca-app-pub-1681984016938400~7623470386"
+  }
+}
